@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 nav{
     position: fixed;
-    background: #810000;
+    background: #e94c4c;
     width: 100%;
-    padding: 10px 0;
+    padding: 12px 0;
     z-index: 12;
 }
 nav .menu{
@@ -49,7 +50,145 @@ nav .menu{
     color: black;
 }
 
+/* Cover Page*/
+.img{
+    background: url('img/cover_page.jpg')no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+.center .title{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+}
+.center .sub_title{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
+.btns button:hover{
+    background: white;
+    color: black;
+}
+
+/* Purpose*/
+.purpose{
+    padding-top: 6%;
+    height: 190vh;
+    padding: 70px;
+    background-color: hsla(0, 10%, 94%, 0.226);
+}
+.purpose h4{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 80px;
+    
+}
+.section_purpose{    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* artists purpose*/
+.section_purpose .artists{
+    display: flex;
+    justify-content: space-around;
+}
+.img_artists{
+    background: url('img/painting.jpg')no-repeat;
+    width: 45%;
+    background-size: 100% 100%;
+    height: 320px;
+}
+.section_artists{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section_artists h5{
+    width: 70%;
+    font-size: 25px;
+    text-align: center;    
+}
+.section_artists p{
+    text-align: justify;
+}
+
+/* amateurs purpose*/
+.section_purpose .amateurs{
+    display: flex;
+    justify-content: space-around;
+
+}
+.img_amateurs{
+    background: url('img/amateur.jpg')no-repeat;
+    width: 45%;
+    background-size: 100% 100%;
+    height: 320px;
+}
+.section_amateurs{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section_amateurs h5{
+    width: 65%;
+    font-size: 25px;
+    text-align: center;    
+}
+.section_amateurs p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar Buttons*/
 nav .menu-btn i{
     color: #fff;
     font-size: 22px;
@@ -59,9 +198,11 @@ nav .menu-btn i{
 input[type="checkbox"]{
     display: none;
 }
+
+/* Navbar Responsive*/
 @media (max-width: 1000px){
     nav{
-        padding: 0 20px 0 30px;
+        padding: 5px 20px 5px 30px;
     }
 }
 @media (max-width: 920px) {
@@ -73,7 +214,7 @@ input[type="checkbox"]{
     }
     nav .menu ul{
         position: fixed;
-        top: 51px;
+        top: 48px;
         left: -100%;
         background: #810000;
         height: 100vh;
