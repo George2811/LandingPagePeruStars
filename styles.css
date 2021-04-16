@@ -268,6 +268,15 @@ footer div{
     padding-top: 7px;
     border-radius: 30px;
     font-size: 25px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.section_socialmedia i:hover{
+    width: 45px;
+    height: 45px;
+    padding-top: 9px;
+    padding-left: 1px;
 }
 
 .facebook{
