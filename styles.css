@@ -92,6 +92,23 @@ nav .menu{
     color: black;
 }
 
+.default-h4{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.default-h5{
+    width: 70%;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.default-p{
+    text-align: justify;
+}
+
 /* Purpose*/
 .purpose{
     padding-top: 6%;
@@ -99,13 +116,13 @@ nav .menu{
     padding: 70px;
     background-color: hsla(0, 10%, 94%, 0.226);
 }
-.purpose h4{
+/* .purpose h4{
     text-align: center;
     font-size: 45px;
     font-weight: 600;
     margin-bottom: 80px;
     
-}
+} */
 .section_purpose{    
     height: 100vh;
     display: flex;
@@ -131,14 +148,14 @@ nav .menu{
     justify-content: space-around;
     align-items: center;
 }
-.section_artists h5{
+/* .section_artists h5{
     width: 70%;
     font-size: 25px;
     text-align: center;    
-}
-.section_artists p{
+} */
+/* .section_artists p{
     text-align: justify;
-}
+} */
 
 /* amateurs purpose*/
 .section_purpose .amateurs{
@@ -164,14 +181,113 @@ nav .menu{
     font-size: 25px;
     text-align: center;    
 }
-.section_amateurs p{
+/* .section_amateurs p{
     text-align: justify;
+} */
+
+/* Registration */
+.registration{
+    padding-top: 6%;
+    height: 94vh;
+    padding: 70px;
+    background-color: hsla(200, 30%, 72%, 0.226);
 }
 
+.img_registration{
+    background: url('img/amateur.jpg')no-repeat;
+    width: 45%;
+    background-size: 100% 100%;
+    height: 320px;
+}
 
+.section_registration{
+    display: flex;
+    justify-content: space-around;
+}
 
+.section_registercontent{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
 
+.section_registercontent button{
+    margin-top: 50px;
+    background: red;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
+.section_registercontent button:hover{
+    background: rgb(122, 0, 0);
+    color: white;
+    cursor:pointer;
+}
+
+.section_registercontent p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Footer */
+footer{
+    background: #000;
+}
+.contact{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.section_socialmedia{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section_socialmedia i{
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.facebook{
+    
+    background: blue;
+}
+
+.instagram{
+    background: rgb(161, 27, 121);
+}
+
+.twitter{
+    background: rgb(51, 123, 151);
+}
+
+h6{
+    font-size: 20px;
+    text-align: center; 
+    margin-bottom: 5px;
+}
 
 
 
