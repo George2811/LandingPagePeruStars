@@ -13,7 +13,6 @@
 }
 
 .default-h5{
-    width: 70%;
     font-size: 25px;
     text-align: center; 
 }
@@ -25,7 +24,7 @@
 /*Navbar*/
 nav{
     position: fixed;
-    background: #ffffff;
+    background: #e94c4c;
     width: 100%;
     padding: 12px 0;
     z-index: 12;
@@ -101,7 +100,7 @@ input[type="checkbox"]{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding: 0 20px;
+    padding: 0 30px;
     text-align: center;
 }
 .center .title{
@@ -111,9 +110,9 @@ input[type="checkbox"]{
 }
 .center .sub_title{
     color: #fff;
-    font-size: 52px;
+    font-size: 40px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .btns button:hover{
@@ -134,11 +133,16 @@ input[type="checkbox"]{
     flex-direction: column;
     justify-content: space-between;
 }
+.card{
+    padding: 0 30px;
+    box-shadow: 5px 6px 10px 1px rgba(0,0,0,0.71);
+}
 
 /* artists purpose*/
 .section_purpose .artists{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
 }
 .img_artists{
     background: url('img/painting.jpg')no-repeat;
@@ -230,22 +234,25 @@ footer{
     flex-direction: row;
     justify-content: space-around;
 }
+.contact div{
+    width: 33.3%;
+}
 footer div{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     text-align: center;
     justify-content: center;
+    text-align: center;
     color: white;
 }
 .section_contact{
-    height: 100px;
     justify-content: space-around;
 }
 .section_socialmedia{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .section_socialmedia i{
     color: white;
