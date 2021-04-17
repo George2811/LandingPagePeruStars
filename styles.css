@@ -161,18 +161,18 @@ input[type="checkbox"]{
 
 /* artists purpose*/
 .section_purpose .artists{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 .img_artists{
     background: url('img/painting.jpg')no-repeat;
     opacity: 0.9;
-    width: 50%;
+    width: 100%;
     background-size: 100% 100%;
     height: 350px;
 }
 .section_artists{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -181,18 +181,18 @@ input[type="checkbox"]{
 
 /* amateurs purpose*/
 .section_purpose .amateurs{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 .img_amateurs{
     background: url('img/amateur.jpg')no-repeat;
     opacity: 0.9;
-    width: 50%;
+    width: 100%;
     background-size: 100% 100%;
     height: 350px;
 }
 .section_amateurs{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -431,7 +431,7 @@ h6{
         font-size: 32px;
     }
     .purpose{
-        height: 200vh;
+        height: 1500px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -439,45 +439,47 @@ h6{
     .default-h4{
         font-size: 30px;        
     }
-    .section_purpose{    
-        height: 100vh;
+    .section_purpose{
+        height: 1200px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        width: 70%;
-        height: 180vh;
+        justify-content:space-between;        
     }
     .section_purpose .artists{
-        flex-direction: column;
-        flex-flow: column-reverse;
-        justify-content: space-between;
-        height: 500px;
+        height: 50%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        grid-template-areas:
+        "artists_text"
+        "artists_img";
     }
     .img_artists{
-        width: 100%;
-        height: 250px;
+        grid-area: artists_img;
+        height: 100%;
     }
     .section_artists{
-        width: 100%;
-        flex-direction: column;
-        height: 210px;
+       grid-area: artists_text;        
     }
     
     /* amateurs purpose*/
     .section_purpose .amateurs{
-        flex-direction: column;        
-        justify-content: space-between;
-        height: 500px;     
+        height: 50%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        grid-template-areas:
+        "amateurs_text"
+        "amateurs_img";
     }
     .img_amateurs{
-        width: 100%;
-        height: 250px;
+        grid-area: amateurs_img;
+        height: 100%
     }
     .section_amateurs{
-        width: 100%;
-        flex-direction: column;
-        height: 210px;
+        grid-area: amateurs_text;
     }
+
     /* Artists Benefits*/
     .artists_benefits{
         flex-direction: column;
