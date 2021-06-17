@@ -561,4 +561,8 @@ h6{
         font-size: 17px;
     }
 
+    .plans-container{
+        display:flex;
+    }
+
 }
