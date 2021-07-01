@@ -303,7 +303,8 @@ input[type="checkbox"]{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 75%;
+    margin-top: 95px;
 }
 
 .VideoAbout{
@@ -336,6 +337,8 @@ input[type="checkbox"]{
     outline: none;
 }
 .section_registercontent input:hover{
+    border: transparent;
+    outline: none;
     background: white;
     color: #ce1212;
     box-shadow: inset 0 0 0 2px #ce1212;
